@@ -7,6 +7,7 @@ function Profile() {
         <div className="profile">
             <img src={ProfilePicture} alt="profile picture" id="profile__img"/>
             <h4>Chimwemwe Masona</h4>
+            <p>slack username: Chimwemwe Masona</p>
         </div>
     )
 }
