@@ -42,6 +42,7 @@ function Links() {
         target="_blank"
         id="book_python"
         className="button"
+        title="A Python course book for beginners"
       >
         Python Books
       </a>
@@ -53,6 +54,7 @@ function Links() {
         target="_blank"
         id="pitch"
         className="button"
+        title="Certified background checker for programmers"
       >
         Background Check for Coders
       </a>
@@ -64,6 +66,7 @@ function Links() {
         target="_blank"
         id="book_design"
         className="button"
+        title="Do you want to get free design books?"
       >
         Design Books
       </a>
