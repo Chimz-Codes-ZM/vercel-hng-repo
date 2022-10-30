@@ -84,7 +84,7 @@ body {
   height: 24px;
 }
 
-.button {
+a {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -106,10 +106,8 @@ body {
   text-decoration: none;
 
   cursor: pointer;
-}
-
-a {
   text-decoration: none;
+  color: inherit;
 }
 
 .footer-content {
