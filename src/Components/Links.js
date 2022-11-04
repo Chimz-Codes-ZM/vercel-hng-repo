@@ -1,4 +1,6 @@
 import React from "react";
+import { Link, NavLink } from "react-router-dom";
+
 
 function Links() {
   return (
@@ -70,6 +72,14 @@ function Links() {
       >
         Design Books
       </a>
+
+      <br></br>
+
+      <Link to="contact" className="button" id="contact"
+        >
+        Contact
+      </Link>
+      
     </div>
   );
 }
