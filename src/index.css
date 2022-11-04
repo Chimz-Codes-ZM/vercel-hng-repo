@@ -137,6 +137,17 @@ hr {
   
 }
 
+.form-main {
+  height: 960px;
+  width: 100%;
+  border: 2px solid red;
+}
+
+.first-last {
+  display: flex;
+  justify-content: space-between;
+}
+
 @media all and (max-width: 800px) {
   .main_section {
     width: 343px;
