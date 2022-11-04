@@ -3,6 +3,8 @@ import React from "react";
 import Links from "./Components/Links";
 import Social from "./Components/Social";
 import Footer from "./Components/Footer";
+import Contact from "./Routes/Contact";
+import { Routes, Route} from 'react-router-dom'
 
 function App() {
   return (
@@ -11,6 +13,9 @@ function App() {
         <Profile />
         <div className="link_section">
           <Links />
+          <Routes>
+            <Route path="contact" element={<Contact />}/>
+          </Routes>
         </div>
         <div className="social_section">
           <Social />
