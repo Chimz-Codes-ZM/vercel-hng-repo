@@ -18,7 +18,7 @@ function Contact() {
                 <br />
                 <input
                   type="text"
-                  id="fname"
+                  id="first_name"
                   placeholder="Enter you first name"
                 ></input>
                 <br />
@@ -29,7 +29,7 @@ function Contact() {
                 <br />
                 <input
                   type="text"
-                  id="lname"
+                  id="last_name"
                   placeholder="Enter your last name"
                 ></input>
                 <br />
@@ -65,14 +65,14 @@ function Contact() {
             <div className="check">
               <label for="agreed" className="container">
                 <input type="checkbox" name="agreed" value="agree"></input>
-                <span class="checkmark"></span>
+                {/* <span class="checkmark"></span> */}
                 You agree to providing your data to (name) who may contact you.
               </label>
               <br />
             </div>
 
             <div className="sub-button">
-              <input type="submit" value="Send message"></input>
+              <input type="submit" value="Send message" id="btn__submit"></input>
             </div>
           </form>
         </div>
