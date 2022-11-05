@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css?family=Inter');
+@import url("https://fonts.googleapis.com/css?family=Inter");
 
 body {
   margin: 0;
@@ -19,7 +19,6 @@ body {
 
   width: 1216px;
   height: 774px;
-  
 }
 
 .profile {
@@ -27,7 +26,6 @@ body {
   flex-direction: column;
   align-items: center;
   padding: 0px;
-
 
   isolation: isolate;
 
@@ -65,7 +63,6 @@ body {
 
 .link_section,
 .social_section {
-
   display: flex;
 }
 
@@ -76,14 +73,14 @@ body {
 }
 
 .children {
-  
   height: 100%;
   width: 100px;
   display: flex;
   justify-content: space-around;
 }
 
-#slack, #github {
+#slack,
+#github {
   width: 24px;
   height: 24px;
 }
@@ -107,7 +104,7 @@ a {
 
   border-radius: 5px;
   border: none;
- background-color: #EAECF0;;
+  background-color: #eaecf0;
 
   cursor: pointer;
   text-decoration: none;
@@ -115,7 +112,6 @@ a {
 }
 
 .footer-content {
- 
   display: flex;
   justify-content: space-around;
   align-items: baseline;
@@ -134,24 +130,120 @@ a {
 
 hr {
   width: 81%;
-  
 }
 
 .form-main {
   height: 960px;
   width: 100%;
-  border: 2px solid red;
+  /* border: 2px solid red; */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.form {
+  /* border: 2px solid red; */
+  width: 59%;
+  height: 77%;
+  padding: 0px;
+  gap: 48px;
+}
+
+.contact-heading {
+  /* border: 2px solid green; */
+  margin-bottom: 48px;
+}
+
+form > h2 {
+  font-size: 36px;
+  margin-bottom: 20px;
 }
 
 .first-last {
+  /* border: 2px solid purple; */
   display: flex;
+  flex-direction: row;
   justify-content: space-between;
+  margin-bottom: 24px;
+}
+
+.name {
+  width: 48%;
+  /* border: 2px solid red; */
+}
+
+.name > input {
+  width: 91%;
+  border: 1px solid #d0d5dd;
+  box-shadow: 0px 1px 2px rgba(16, 24, 40, 0.05);
+  border-radius: 8px;
+}
+
+input {
+  /* width: 48%; */
+  margin: 6px 0px 10px 0px;
+  padding: 10px 14px;
+}
+
+.email {
+  /* border: 2px solid yellow; */
+  margin-bottom: 24px;
+}
+
+.email > input {
+  width: 95.5%;
+  border: 1px solid #d0d5dd;
+  box-shadow: 0px 1px 2px rgba(16, 24, 40, 0.05);
+  border-radius: 8px;
+}
+
+.message {
+  /* border: 2px solid red; */
+  margin-bottom: 24px;
+}
+
+.message > textarea {
+  width: 95.8%;
+  margin: 6px 0px 10px 0px;
+  padding: 10px 14px;
+  border: 1px solid #d0d5dd;
+  box-shadow: 0px 1px 2px rgba(16, 24, 40, 0.05);
+  border-radius: 8px;
+  resize: none;
+}
+
+.check {
+  /* border: 2px solid red; */
+  display: flex;
+  align-items: center;
+  margin-bottom: 24px;
+}
+
+input[type="checkbox"] {
+  padding: 10px 0px 0px;
+  margin-right: 12px;
+  width: 20px;
+  height: 22px;
+}
+
+.sub-button {
+  /* border: 2px solid red; */
+}
+
+
+input[type="submit"] {
+  color:#fff;
+  background: #1570ef;
+  width: 100%;
+  border: 1px solid #1570ef;
+  box-shadow: 0px 1px 2px rgba(16, 24, 40, 0.05);
+  border-radius: 8px;
 }
 
 @media all and (max-width: 800px) {
   .main_section {
     width: 343px;
-    height: 400px
+    height: 400px;
   }
 
   .buttons {
@@ -169,17 +261,16 @@ hr {
     gap: 12px;
     font-weight: 500;
 
-  
     filter: drop-shadow(0px 1px 2px rgba(16, 24, 40, 0.05));
-  
+
     flex: none;
     order: 0;
     align-self: stretch;
-  
+
     border-radius: 5px;
     border: none;
     text-decoration: none;
-  
+
     cursor: pointer;
   }
 
@@ -190,8 +281,22 @@ hr {
   .footer-content {
     display: block;
     width: 343px;
-  }  
+  }
 
-  
+  .first-last {
+    flex-direction: column;
+  }
+
+  .name {
+    width: 100%;
+    margin-bottom: 24px;
+  }
+
+  .message > textarea {
+    width: 91%;
+  }
+
+  .email > input {
+    width: 91%;
+  }
 }
-
