@@ -56,15 +56,16 @@ function Contact() {
                 rows="6"
                 cols="50"
                 placeholder="Send me a message and I'll reply you as soon as possible..."
+                required="required"
+                // oninvalid="this.setCustomValidity('Enter User Name Here')"
               ></textarea>
               <br />
             </div>
 
             <div className="check">
-              <span className="checkbox">
+              <label for="agreed" className="container">
                 <input type="checkbox" name="agreed" value="agree"></input>
-              </span>
-              <label for="agreed">
+                <span class="checkmark"></span>
                 You agree to providing your data to (name) who may contact you.
               </label>
               <br />
